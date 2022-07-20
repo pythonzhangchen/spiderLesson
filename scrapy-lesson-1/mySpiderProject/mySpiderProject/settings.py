@@ -17,7 +17,8 @@ NEWSPIDER_MODULE = 'mySpiderProject.spiders'
 #USER_AGENT = 'mySpiderProject (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False  # 是否遵循ROBOT协议
+LOG_LEVEL = 'ERROR'     # 程序报错了显示
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
