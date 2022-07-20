@@ -10,4 +10,8 @@ from itemadapter import ItemAdapter
 
 class MyspiderprojectPipeline:
     def process_item(self, item, spider):
+        name = item['name']
+        address = item['address']
+        with open('aa.txt', 'a', encoding='utf-8') as add:
+            add.write(name + address + '\n')
         return item
