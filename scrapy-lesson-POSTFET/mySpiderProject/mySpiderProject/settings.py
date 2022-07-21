@@ -17,11 +17,10 @@ NEWSPIDER_MODULE = 'mySpiderProject.spiders'
 #USER_AGENT = 'mySpiderProject (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False  # 是否遵循ROBOT协议
-LOG_LEVEL = 'ERROR'     # 程序报错了显示
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 16 # 并行的量，默认16
+#CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -63,9 +62,9 @@ CONCURRENT_REQUESTS = 16 # 并行的量，默认16
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'mySpiderProject.pipelines.MyspiderprojectPipeline': 300,
-}
+#ITEM_PIPELINES = {
+#    'mySpiderProject.pipelines.MyspiderprojectPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
